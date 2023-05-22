@@ -13,6 +13,7 @@
 (package! treemacs)
 (package! neotree)
 (package! elm-mode)
+(package! rvm)
 
 ;; (add-to-list 'image-types 'svg)
 

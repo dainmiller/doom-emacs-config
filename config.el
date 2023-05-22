@@ -78,16 +78,20 @@
 (setq doom-treemacs-use-generic-icons nil)
 (setq doom-font (font-spec :family "Consolas" :size 14 :weight 'semi-light))
 (setq org-level-color-stars-only t)
-(setq global-hl-line-mode nil)
-(setq menu-bar-mode -1)
-(setq toggle-scroll-bar -1)
-(setq tool-bar-mode -1)
+(global-hl-line-mode -1)
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(tool-bar-mode -1)
 
 (global-set-key (kbd "C-h")  'windmove-left)
 (global-set-key (kbd "C-l") 'windmove-right)
 (global-set-key (kbd "C-k")    'windmove-up)
 (global-set-key (kbd "C-j")  'windmove-down)
 
-(setq flycheck-mode -1)
+;; (flycheck-mode -1)
 
 (global-vi-tilde-fringe-mode -1)
+(vi-tilde-fringe-mode -1)
+
+(define-key evil-normal-state-map "vv" 'split-window-horizontally)
+;; (define-key evil-normal-state-map "ss" 'split-window-vertically)
